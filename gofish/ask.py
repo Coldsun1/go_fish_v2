@@ -27,3 +27,7 @@ def input_clean(input_string):
             cleaned_string += char
 
     return cleaned_string
+
+
+def random():
+    print("Turkey!")
