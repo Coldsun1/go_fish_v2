@@ -34,6 +34,7 @@ class Hand(object):
         for i in ex.types:
             if self.hand.count(i) >= 4:
                 for _ in range(4):
+                    print('What?')
                     self.hand.remove(i)
 
                 self.sets.append(i)
