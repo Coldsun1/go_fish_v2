@@ -39,4 +39,4 @@ class Hand(object):
                 self.sets.append(i)
 
     def temp(self):
-        print('Self!')
+        print('Temp!')
