@@ -40,3 +40,6 @@ class Hand(object):
 
     def temp(self):
         print('Temp!')
+
+    def temp2(self):
+        print('Temp2!')
