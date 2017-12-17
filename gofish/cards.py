@@ -38,5 +38,5 @@ class Hand(object):
 
                 self.sets.append(i)
 
-    def which(self):
-        print("1")
+    def second():
+        print('2')
