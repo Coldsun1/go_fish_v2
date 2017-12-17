@@ -37,13 +37,3 @@ class Hand(object):
                     self.hand.remove(i)
 
                 self.sets.append(i)
-
-
-    def master(self):
-        print('Master!')
-
-    def temp(self):
-        print('Temp!')
-
-    def temp2(self):
-        print('Temp2!')
