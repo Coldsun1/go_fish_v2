@@ -38,5 +38,5 @@ class Hand(object):
 
                 self.sets.append(i)
 
-    def second():
-        print('2')
+    def temp(self):
+        print('Self!')
