@@ -37,3 +37,6 @@ class Hand(object):
                     self.hand.remove(i)
 
                 self.sets.append(i)
+
+    def second():
+        print('2')
