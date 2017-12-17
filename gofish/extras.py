@@ -4,10 +4,6 @@ types = ['A', '2', '3', '4', '5', '6', '7', '8', '9', '10', 'J', 'Q', 'K']
 
 
 
-
-
-
-
 # Checks to see it someone in the game won
 def test_win(player_dict):
 
@@ -30,7 +26,7 @@ def test_win(player_dict):
         print(f'{winner} won!')
         exit(0)
 
-# old
+# old ask
 def check_inquire_input(player, choice_player, choice_card):
     types = ['A', '2', '3', '4', '5', '6', '7', '8', '9', '10', 'J', 'Q', 'K']
 
@@ -51,7 +47,7 @@ def check_inquire_input(player, choice_player, choice_card):
 
     return choice_player, choice_card
 
-# old
+# old ask
 def inquire(player):
     current_cards = len(player.cards)
     response = ['Inquire']
