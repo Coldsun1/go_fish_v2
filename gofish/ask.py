@@ -18,16 +18,25 @@ def is_card(card, cards):
 
 # strip all none alphanumeric charaters
 # return cleaned_string
-def input_clean(input_string):
-    cleaned_string = ''
+def clean_word(word):
+    cleaned_word = ''
     allow_char = 'abcdefghijklmnopqrstuvwxyz1234567890'
 
-    for char in input_string:
+    for char in word.lower():
         if char in allow_char:
-            cleaned_string += char
+            cleaned_word += char
 
-    return cleaned_string
+    return cleaned_word
 
+# takes a sentence and returns a list with the words
+def clean_sentence(sentence):
+    cleaned_sentence = []
 
-def random():
-    print("Turkey!")
+    words = sentence.split()
+
+    for word in words:
+        cleaned_sentence.append(clean_word(word))
+
+    cleaned_sentence = list(filter(None, cleaned_sentence))
+
+    return cleaned_sentence
