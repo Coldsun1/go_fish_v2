@@ -16,7 +16,8 @@ def fill_center_deck():
 class Hand(object):
 
     # contains self.hand
-    def __init__(self):
+    def __init__(self, name):
+        self.name = name
         self.hand = []
         self.sets = []
 
@@ -37,9 +38,3 @@ class Hand(object):
                     self.hand.remove(i)
 
                 self.sets.append(i)
-
-    def temp(self):
-        print('Temp!')
-
-    def temp2(self):
-        print('Temp2!')
