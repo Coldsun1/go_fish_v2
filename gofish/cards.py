@@ -1,11 +1,11 @@
 # main deck, player's decks
 import random
-import gofish.extras as ex
+from gofish import extras
 
 # returns a list of 52 hand
 def fill_center_deck():
     deck = []
-    for single_type in ex.types:
+    for single_type in extras.types:
         for line in range(4):
             deck.append(single_type)
 
@@ -28,11 +28,11 @@ class Hand(object):
 
     # sorts self.hand
     def sort(self):
-        self.hand = sorted(self.hand, key=ex.types.index)
+        self.hand = sorted(self.hand, key=extras.types.index)
 
     # look for sets of 4 hand in self.hand
     def search_sets(self):
-        for i in ex.types:
+        for i in extras.types:
             if self.hand.count(i) >= 4:
                 for _ in range(4):
                     self.hand.remove(i)
